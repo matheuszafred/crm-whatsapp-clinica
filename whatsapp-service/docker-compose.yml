@@ -1,0 +1,9 @@
+services:
+  whatsapp-service:
+    build: .
+    container_name: clinica-whatsapp
+    restart: unless-stopped
+    env_file: .env
+    volumes:
+      - ./auth_info:/app/auth_info
+    # Para escanear o QR na 1ª vez:  docker logs -f clinica-whatsapp

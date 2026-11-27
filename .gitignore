@@ -1,0 +1,29 @@
+# Credenciais — nunca commitar
+.env
+.env.local
+*.json.key
+api-key-*.json
+oauth2-client-secret.json
+service-account*.json
+
+# Node
+node_modules/
+.next/
+.vercel/
+*.tsbuildinfo
+
+# Cache de scrape (Firecrawl)
+.firecrawl/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
